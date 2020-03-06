@@ -98,7 +98,7 @@ void affiche(const Image<float>& I) {
         for(int j=0; j<D.width(); j++) {
             if(D(j,i)>=0) {
                 float angle=M_PI/2*D(j,i)/M;
-                B(j,i) = Color(byte(255*sin(angle)), 0, byte(255*cos(angle)));
+                B(j,i) = Color(255*sin(angle), 0, 255*cos(angle));
             }
             else B(j,i) = GREEN;
         }

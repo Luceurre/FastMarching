@@ -61,7 +61,7 @@ bool FilePriorite::is_sorted() {
 }
 
 int FilePriorite::lazy_compare(int i) {
-    maxi_index(2 * i + 1, maxi_index(2 * i, i));
+    return maxi_index(2 * i + 1, maxi_index(2 * i, i));
 }
 
 int FilePriorite::maxi_index(int i, int j) {
